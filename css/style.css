@@ -1,152 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", 'sans-serif';
-    background: #040F18;
-    color: #EFEFEF;
+  font-family: "Roboto", 'sans-serif';
+  background: #040F18;
+  color: #EFEFEF;
 }
 
 .nav__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    max-width: 650px;
-    background-color: #232323;
-    width: 100%;
-    margin: auto;
-    position: sticky;
-    z-index: 20;
-    top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 650px;
+  background-color: #232323;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  z-index: 20;
+  top: 17px;
+  border-radius: 7px;
 }
 
 .nav__links {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    gap: 30px;
-    font-size: 1.3rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 30px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .nav__link {
-    color: aliceblue;
-    text-decoration: none;
-    position: relative;
+  color: #f0f8ff;
+  text-decoration: none;
+  position: relative;
 }
 
 .nav__link::before {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    width: 80%;
-    height: 3px;
-    background: aliceblue;
-    transform: scale(0);
-    transition: transform .4s;
-    transform-origin: right;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 80%;
+  height: 2.5px;
+  background: #f0f8ff;
+  transform: scale(0);
+  transition: transform .4s;
+  transform-origin: right;
 }
 
 .nav__link:hover::before {
-    transform: scale(1);
-    transform-origin: left;
+  transform: scale(1.3);
+  transform-origin: left;
 }
 
 .banner__container {
-    width: 100%;
-    margin: 2rem 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.mdzol.com/u/fotografias/m/2022/7/6/f608x342-1245609_1275332_15.jpeg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 456px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.mdzol.com/u/fotografias/m/2022/7/6/f608x342-1245609_1275332_15.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 456px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .banner__text {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: flex-end;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: flex-end;
 }
 
 .banner__title {
-    line-height: 2;
-    font-size: 1.3rem;
-    color: #07FBEC;
+  line-height: 2;
+  font-size: 1.3rem;
+  color: #07FBEC;
 }
 
 .arrow {
-    width: 40px;
-    filter: invert(200%);
+  width: 40px;
+  filter: invert(200%);
 }
 
 .rigth {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .picture__img {
-    width: 100px;
+  width: 100px;
 }
 
 .down__arrow {
-    text-align: center;
-    font-size: 3rem;
-    display: block;
-    margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  display: block;
+  margin: 1rem;
 }
 
 .landing__container {
-    text-align: center;
-    padding: 0 1rem;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .landing__title {
-    font-size: 3rem;
-    line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #07FBEC;
 }
 
 .movies__container {
-    margin-top: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .movies__img {
-    width: 317px;
-    height: 420px;
-    transition: transform .4s;
+  width: 317px;
+  height: 420px;
+  transition: transform .4s;
 }
 
 .movies__img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .footer__container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #232323;
-    color: #EFEFEF;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #232323;
+  color: #EFEFEF;
+  font-size: 1.3rem;
+  max-width: 650px;
+  width: 100%;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-radius: 7px;
+  bottom: -17px;
 }
 
-.footer__social {
-    display: flex;
-    gap: 20px;
+.footer__links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: #f0f8ff;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer__link::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 80%;
+  height: 2.5px;
+  background: #f0f8ff;
+  transform: scale(0);
+  transition: transform .4s;
+  transform-origin: right;
+}
+
+.footer__link:hover::before {
+  transform: scale(1.3);
+  transform-origin: left;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  margin-left: 15px;
 }
