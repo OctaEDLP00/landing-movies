@@ -1,0 +1,66 @@
+@media screen and (max-width: 500px) {
+  
+  .nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #232323;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    border-radius: 0;
+    position: sticky;
+    z-index: 20;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #232323;
+    color: #EFEFEF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+
+  .footer__social {
+    display: flex;
+    gap: 20px;
+  }
+
+  .banner__container {
+    width: 100%;
+    margin: 2rem 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.mdzol.com/u/fotografias/m/2022/7/6/f608x342-1245609_1275332_15.jpeg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 456px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .banner__text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: flex-end;
+  }
+
+  .banner__title {
+    line-height: 2;
+    font-size: 2rem;
+    color: #07FBEC;
+  }
+
+}
